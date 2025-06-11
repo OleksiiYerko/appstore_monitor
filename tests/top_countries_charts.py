@@ -16,7 +16,7 @@ TOP_COUNTRIES = [
     "au", "nl", "se", "br", "in", "mx", "tr", "ch", "pl", "sg"
 ]
 
-BUNDLE_ID = "com.kotiuzhynskyi.CameraTranslator"
+BUNDLE_ID = "my.app.video.translator"
 CHART_TYPE = "topgrossingapplications"
 
 
