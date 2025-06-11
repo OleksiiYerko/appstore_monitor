@@ -18,14 +18,14 @@ def load_telegram_config():
     
     if env_token and env_chat_id:
         print("📱 Используются переменные окружения для Telegram")
-        return env_chat_id, env_token
+        return env_token, env_chat_id
     
     # Если переменных окружения нет, загружаем из файла
     config_path = os.path.join(get_project_root(), "data", "config", "telegram_config.json")
     try:
         with open(config_path, "r", encoding="utf-8") as f:
             config = json.load(f)
-            return config.get("TG_CHAT_ID"), config.get("TG_TOKEN")
+            return config.get("TG_TOKEN"), config.get("TG_CHAT_ID")
     except FileNotFoundError:
         print(f"⚠️ Файл конфигурации Telegram не найден: {config_path}")
         return "YOUR_BOT_TOKEN", "YOUR_CHAT_ID", None
@@ -165,7 +165,7 @@ def load_message_ids_from_repo():
 def send_to_telegram(message, country=None, message_id=None):
     """Отправляет сообщение в Telegram"""
     # Загружаем конфигурацию заново
-    token, chat_id, topic_id = load_telegram_config()
+    token, chat_id = load_telegram_config()
     
     if not token or token == "YOUR_BOT_TOKEN":
         print("⚠️ Токен Telegram не настроен")
@@ -178,10 +178,7 @@ def send_to_telegram(message, country=None, message_id=None):
         "text": message,
         "parse_mode": "HTML"
     }
-    
-    if topic_id:
-        data["message_thread_id"] = topic_id
-    
+        
     try:
         response = requests.post(url, data=data)
         response.raise_for_status()
@@ -201,7 +198,7 @@ def update_message(message_id, new_text):
     """Обновляет существующее сообщение в Telegram"""
     print(f"🔄 Пытаемся обновить сообщение ID: {message_id}")
     # Загружаем конфигурацию заново
-    token, chat_id, topic_id = load_telegram_config()
+    token, chat_id = load_telegram_config()
     
     if not token or token == "YOUR_BOT_TOKEN":
         print("⚠️ Токен Telegram не настроен")
@@ -215,9 +212,6 @@ def update_message(message_id, new_text):
         "text": new_text,
         "parse_mode": "HTML"
     }
-    
-    if topic_id:
-        data["message_thread_id"] = topic_id
     
     try:
         response = requests.post(url, data=data)

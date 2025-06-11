@@ -39,7 +39,7 @@ def format_rank_display(prev_rank, rank):
 def main_loop(bundle_id, search_terms, limit, keywords_file=None):
     """Основной цикл мониторинга"""
     # Загружаем конфигурацию Telegram
-    token, chat_id, topic_id = load_telegram_config()
+    token, chat_id = load_telegram_config()
     print(f"📱 Telegram конфигурация загружена: токен {'настроен' if token and token != 'YOUR_BOT_TOKEN' else 'не настроен'}")
     
     # Обновляем пути к файлам
@@ -167,7 +167,7 @@ def main_loop(bundle_id, search_terms, limit, keywords_file=None):
 def single_check(bundle_id, search_terms, limit, keywords_file=None):
     """Однократная проверка мониторинга (для GitHub Actions)"""
     # Загружаем конфигурацию Telegram
-    token, chat_id, topic_id = load_telegram_config()
+    token, chat_id = load_telegram_config()
     print(f"📱 Telegram конфигурация загружена: токен {'настроен' if token and token != 'YOUR_BOT_TOKEN' else 'не настроен'}")
     
     # Обновляем пути к файлам

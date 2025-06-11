@@ -1,144 +1,17 @@
 {
-  "us|deepl translate": {
-    "last_change_time": "11 Jun 03:04",
-    "last_rank": 4,
-    "initial_rank": 4
-  },
-  "gb|deepl translate": {
-    "last_change_time": "11 Jun 11:14",
-    "last_rank": 196,
-    "initial_rank": 196
-  },
-  "us|video translator": {
-    "last_change_time": "11 Jun 11:14",
-    "last_rank": 4,
-    "initial_rank": 5
-  },
   "gb|video translator": {
-    "last_change_time": "11 Jun 11:14",
-    "last_rank": 4,
-    "initial_rank": 4
-  },
-  "us|deepl": {
-    "last_change_time": "11 Jun 03:04",
-    "last_rank": 5,
-    "initial_rank": 5
-  },
-  "gb|deepl": {
-    "last_change_time": "11 Jun 11:14",
-    "last_rank": 4,
-    "initial_rank": 4
-  },
-  "us|deep translate": {
-    "last_change_time": "11 Jun 03:04",
-    "last_rank": 4,
-    "initial_rank": 4
-  },
-  "gb|deep translate": {
-    "last_rank": null,
-    "initial_rank": null
-  },
-  "us|переводчик": {
-    "last_change_time": "11 Jun 03:04",
-    "last_rank": 6,
-    "initial_rank": 6
-  },
-  "gb|переводчик": {
-    "last_change_time": "11 Jun 11:14",
-    "last_rank": 63,
-    "initial_rank": 63
-  },
-  "us|translator voice": {
-    "last_change_time": "11 Jun 05:23",
+    "last_change_time": "11 Jun 11:39",
     "last_rank": 2,
-    "initial_rank": 1
-  },
-  "gb|translator voice": {
-    "last_change_time": "11 Jun 11:14",
-    "last_rank": 1,
-    "initial_rank": 1
-  },
-  "us|voice translate": {
-    "last_change_time": "11 Jun 03:04",
-    "last_rank": 2,
-    "initial_rank": 2
-  },
-  "gb|voice translate": {
-    "last_change_time": "11 Jun 11:14",
-    "last_rank": 1,
-    "initial_rank": 1
-  },
-  "us|ai translator": {
-    "last_rank": 19,
-    "initial_rank": 201,
-    "last_change_time": "11 Jun 11:14"
-  },
-  "gb|ai translator": {
-    "last_change_time": "11 Jun 11:14",
-    "last_rank": 4,
     "initial_rank": 4
   },
   "us|photo translator": {
-    "last_rank": null,
-    "initial_rank": null
+    "last_rank": 4,
+    "initial_rank": 4,
+    "last_change_time": "11 Jun 11:39"
   },
   "gb|photo translator": {
-    "last_rank": null,
-    "initial_rank": null
-  },
-  "us|video translate": {
-    "last_rank": null,
-    "initial_rank": null
-  },
-  "gb|video translate": {
-    "last_change_time": "11 Jun 11:14",
-    "last_rank": 59,
-    "initial_rank": 59
-  },
-  "us|translator video": {
-    "last_rank": null,
-    "initial_rank": null
-  },
-  "gb|translator video": {
-    "last_change_time": "11 Jun 11:14",
-    "last_rank": 39,
-    "initial_rank": 39
-  },
-  "us|translate video": {
-    "last_rank": null,
-    "initial_rank": null
-  },
-  "gb|translate video": {
-    "last_change_time": "11 Jun 11:14",
-    "last_rank": 18,
-    "initial_rank": 18
-  },
-  "us|deepl translator": {
-    "last_change_time": "11 Jun 03:04",
     "last_rank": 2,
-    "initial_rank": 2
-  },
-  "gb|deepl translator": {
-    "last_change_time": "11 Jun 11:14",
-    "last_rank": 42,
-    "initial_rank": 42
-  },
-  "us|google translator": {
-    "last_change_time": "11 Jun 03:04",
-    "last_rank": 2,
-    "initial_rank": 2
-  },
-  "gb|google translator": {
-    "last_rank": null,
-    "initial_rank": null
-  },
-  "us|voice translator": {
-    "last_rank": null,
-    "initial_rank": null
-  },
-  "gb|voice translator": {
-    "last_change_time": "11 Jun 11:14",
-    "last_rank": 3,
-    "initial_rank": 3
+    "initial_rank": 2,
+    "last_change_time": "11 Jun 11:39"
   }
 }
