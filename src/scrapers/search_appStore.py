@@ -268,7 +268,7 @@ def single_check(bundle_id, search_terms, limit, keywords_file=None):
 
 if __name__ == "__main__":
     # Фиксированные параметры
-    bundle_id = "com.kotiuzhynskyi.CameraTranslator"
+    bundle_id = "e.translator.ios"
     project_root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
     keywords_file = os.path.join(project_root, "data", "config", "keywords.json")
     limit = 250

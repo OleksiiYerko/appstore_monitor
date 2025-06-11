@@ -13,14 +13,11 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 
 TELEGRAM_TOKEN = os.environ.get('TELEGRAM_TOKEN')
 TELEGRAM_CHAT_ID = os.environ.get('TELEGRAM_CHAT_ID')
-TELEGRAM_TOPIC_ID = os.environ.get('TELEGRAM_TOPIC_ID')
 
 def send_telegram_message(message):
     if TELEGRAM_TOKEN and TELEGRAM_CHAT_ID:
         url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
         data = {"chat_id": TELEGRAM_CHAT_ID, "text": message}
-        if TELEGRAM_TOPIC_ID:
-            data["message_thread_id"] = TELEGRAM_TOPIC_ID
         try:
             requests.post(url, data=data)
         except Exception as e:
