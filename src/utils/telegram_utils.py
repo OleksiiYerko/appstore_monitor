@@ -15,7 +15,6 @@ def load_telegram_config():
     # Сначала проверяем переменные окружения (для GitHub Actions)
     env_token = os.environ.get('TELEGRAM_TOKEN')
     env_chat_id = os.environ.get('TELEGRAM_CHAT_ID')
-    env_topic_id = os.environ.get('TELEGRAM_TOPIC_ID')
     
     if env_token and env_chat_id:
         print("📱 Используются переменные окружения для Telegram")
@@ -26,7 +25,7 @@ def load_telegram_config():
     try:
         with open(config_path, "r", encoding="utf-8") as f:
             config = json.load(f)
-            return config.get("TG_TOKEN"), config.get("TG_CHAT_ID"))
+            return config.get("TG_CHAT_ID"), config.get("TG_TOKEN")
     except FileNotFoundError:
         print(f"⚠️ Файл конфигурации Telegram не найден: {config_path}")
         return "YOUR_BOT_TOKEN", "YOUR_CHAT_ID", None
