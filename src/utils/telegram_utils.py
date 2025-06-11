@@ -18,7 +18,7 @@ def load_telegram_config():
     
     if env_token and env_chat_id:
         print("📱 Используются переменные окружения для Telegram")
-        return env_token, env_chat_id, env_topic_id
+        return env_chat_id, env_token
     
     # Если переменных окружения нет, загружаем из файла
     config_path = os.path.join(get_project_root(), "data", "config", "telegram_config.json")
