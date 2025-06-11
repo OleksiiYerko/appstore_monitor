@@ -1,17 +1,17 @@
 {
   "gb|video translator": {
-    "last_change_time": "11 Jun 11:39",
-    "last_rank": 2,
+    "last_change_time": "11 Jun 11:58",
+    "last_rank": 1,
     "initial_rank": 4
   },
   "us|photo translator": {
-    "last_rank": 4,
+    "last_rank": null,
     "initial_rank": 4,
-    "last_change_time": "11 Jun 11:39"
+    "last_change_time": "11 Jun 11:58"
   },
   "gb|photo translator": {
-    "last_rank": 2,
+    "last_rank": null,
     "initial_rank": 2,
-    "last_change_time": "11 Jun 11:39"
+    "last_change_time": "11 Jun 11:58"
   }
 }
